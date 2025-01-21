@@ -41,6 +41,16 @@
     color: #5D58EF;
 }
 
+.blue-gradient {
+    background-image: linear-gradient(to bottom, #DEF5FF, #fff);
+}
+.orange-gradient {
+    background-image: linear-gradient(to bottom, #FFF4DC, #fff);
+}
+.purple-gradient {
+    background-image: linear-gradient(to bottom, #F2E8FF, #fff);
+}
+
 /* Nav section */
 #nav-section {
     justify-content: space-between;
@@ -91,14 +101,81 @@
     background-color: #000;
     padding: 10px 50px;
 }
+/* Curriculum  Section */
+.curriculum {
+    background-image: url(../assets/bg.png);
+}
+.curriculum h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 800;
+}
+.curriculum-cards {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.curriculum-card {
+    box-shadow: 0 0 29px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.curriculum-card-img {
+    padding: 70px 0 40px 0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.curriculum-card-text {
+    padding: 10px 54px;
+    background-color: #fff;
+}
+.curriculum-card-text h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.curriculum-card-text p {
+    color: #808080;
+    font-size: 1.25rem;
+    margin: 40px 0;
+    line-height: 30px;
+}
+.curriculum-card-text button {
+    background-color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    margin-bottom: 80px;
+}
+.round-btn {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 100px;
+}
+.round-btn-first, .round-btn-second {
+    width: 50px;
+    height: 50px;
+    background-color: #FEA301;
+    border-radius: 50%;
+    text-align: center;
+}
+.round-btn-first i, .round-btn-second i {
+    margin-top: 14px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
 
 /* Responsive CSS */
 @media screen and (max-width:580px) {
     html {
         font-size: 12px;
     }
-    #banner-section {
+    #banner-section, .curriculum{
         width: 355px;
+        margin: 0 auto;
     }
 
 
@@ -124,8 +201,24 @@
     .banner-img img {
         margin-top: 18px;
         max-width: 100%;
+        margin-bottom: 10px;
     } 
     .banner-text h3 {
         font-size: 3rem;
+    }
+    .curriculum-cards {
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .curriculum h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .curriculum-card-text {
+        padding: 10px 30px;
+    }
+    .round-btn {
+        display: none;
     }
 }
