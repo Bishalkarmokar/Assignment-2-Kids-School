@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+.primary-font {
+    font-optical-sizing: auto;
+    font-family: "Quicksand", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Important Class */
+.fixed-width {
+    max-width: 1650px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex; 
+}
+.primary-btn {
+    font-size: 1.3rem;
+    padding: 10px 60px;
+    background-color: #FEA301;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+/* Colors */
+.orange {
+    color: #FEA301;
+}
+.sky-blue {
+    color: #01ACFD;
+}
+.light-blue {
+    color: #05D4DF;
+}
+.purple {
+    color: #5D58EF;
+}
+
+/* Nav section */
+#nav-section {
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.nav-logo {
+    align-items: center; 
+}
+.nav-logo h3 {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.nav-menu {
+    justify-content: space-around;
+    width: 500px;
+}
+.nav-menu li {
+    list-style: none;
+}
+.nav-menu a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.nav-icon {
+    display: none;
+}
+/* Responsive CSS */
+@media screen and (max-width:580px) {
+    .nav-logo h3, .nav-menu, .nav-btn {
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+    }
+    .nav-icon i {
+        font-size: 42px;
+    }
+    #nav-section {
+        margin: 0;
+        padding: 18px 25px;
+        border: 1px solid #FEA301;
+    }
+}
