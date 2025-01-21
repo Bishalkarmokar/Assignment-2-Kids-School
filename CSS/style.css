@@ -69,8 +69,39 @@
 .nav-icon {
     display: none;
 }
+/* Banner Section */
+#banner-section {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.banner-text {
+    max-width: 640px;
+    margin-top: 122px;
+}
+.banner-text h3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.banner-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.banner-text button {
+    background-color: #000;
+    padding: 10px 50px;
+}
+
 /* Responsive CSS */
 @media screen and (max-width:580px) {
+    html {
+        font-size: 12px;
+    }
+    #banner-section {
+        width: 355px;
+    }
+
+
     .nav-logo h3, .nav-menu, .nav-btn {
         display: none;
     }
@@ -84,5 +115,17 @@
         margin: 0;
         padding: 18px 25px;
         border: 1px solid #FEA301;
+    }
+    #banner-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .banner-img img {
+        margin-top: 18px;
+        max-width: 100%;
+    } 
+    .banner-text h3 {
+        font-size: 3rem;
     }
 }
