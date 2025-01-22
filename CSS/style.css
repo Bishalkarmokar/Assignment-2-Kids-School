@@ -166,6 +166,54 @@
     color: #fff;
 }
 
+/* footer */
+footer {
+    background-color: #01ACFD;
+    height: 520px;
+    padding-top: 125px;
+}
+footer section {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    justify-content: space-evenly;
+}
+.footer-text {
+    width: 500px;
+    /* margin-right: 140px; */
+}
+.footer-text-header h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.footer-text p {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.footer-menu-links li {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.footer-menu-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive CSS */
@@ -173,7 +221,7 @@
     html {
         font-size: 12px;
     }
-    #banner-section, .curriculum{
+    #banner-section, .curriculum, .footer-section{
         width: 355px;
         margin: 0 auto;
     }
@@ -220,5 +268,25 @@
     }
     .round-btn {
         display: none;
+    }
+    footer {
+        height: 640px;
+        padding-top: 60px;
+    }
+    footer section {
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .footer-text {
+        margin: 0;
+        width: 340px;
+        margin-bottom: 20px;
+    }
+    .footer-text p {
+        line-height: 20px;
+    }
+    .footer-menu-links li {
+        margin-bottom: 20px;
     }
 }
