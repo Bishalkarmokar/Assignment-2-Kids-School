@@ -165,7 +165,89 @@
     font-size: 1.5rem;
     color: #fff;
 }
-
+/* Our Stories */
+.our-story-section{
+    width: 100%;
+    background: linear-gradient(transparent, #FFF4DC), url("../assets/bg.png") no-repeat center, #fff;
+}
+.our-story-section > .fixed-width {
+    padding-bottom: 180px;
+}
+.our-story-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.our-stories-cards {
+    justify-content: space-between;
+}
+.big-card {
+    width: 660px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.big-card-text {
+    width: 560px;
+    margin: 0 auto;
+}
+.big-card-text h3 {
+    font-size: 2rem;
+    margin: 30px 0 30px 0;
+    font-weight: 800;
+}
+.big-card-text p {
+    font-size: 1.25rem;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.big-card-img img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0;
+}
+.big-card-img button {
+    background-color: #01ACFD;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 20px 35px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 40px;
+    position: relative;
+    top: -40px;
+}
+.small-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.small-card {
+    background-color: #fff;
+    width: 297px;
+    height: 361px;
+    border-radius: 30px;
+}
+.small-card h3 {
+    margin: 30px 26px 0px 30px;
+    font-weight: 800;
+}
+.small-card img {
+    max-width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.small-card button {
+    background-color: #95B226;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 22px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 26px;
+    position: relative;
+    top: -28px;
+}
+.our-story-mobile-btn {
+    display: none;
+}
 /* footer */
 footer {
     background-color: #01ACFD;
@@ -268,6 +350,55 @@ footer section {
     }
     .round-btn {
         display: none;
+    }
+    .big-card {
+        display: none;
+        gap: 10px;
+    }
+    .fixed-width-mobile {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .our-stories-cards {
+        display: block;
+    }
+    .small-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .small-card {
+        width: 180px;
+        height: 270px;
+        border-radius: 15px;
+    }
+    .small-card h3 {
+        font-size: 1.3rem;
+        margin: 0px 0px 0px 2px;
+    }
+    .small-card button {
+    background-color: #95B226;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 3px;
+    position: relative;
+    top: -24px;
+    }
+    .our-story-mobile-btn {
+        display: block;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #000;
+        padding: 14px 60px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 100px 0 0 90px;
+    }
+    .our-story-section > .fixed-width {
+    padding-bottom: 80px;
     }
     footer {
         height: 640px;
